@@ -11,7 +11,7 @@
             <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image">
           </div>
           <h3 class="mt-2 text-lg font-medium text-gray-800  dark:text-neutral-300 dark:group-hover:text-white dark:group-focus:text-white">
-            Unity’s inside sales team drives 80% of its revenue with Preline.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo amet qui minus numquam, inventore illum consequuntur.
           </h3>
           <a href="#" >
             <p class="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold text-blue-700 dark:text-neutral-200 group-hover:text-gray-600 group-focus:text-blue-600">
@@ -26,7 +26,7 @@
             <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image">
           </div>
           <h3 class="mt-2 text-lg font-medium text-gray-800  dark:text-neutral-300 dark:group-hover:text-white dark:group-focus:text-white">
-            Unity’s inside sales team drives 80% of its revenue with Preline.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo amet qui minus numquam, inventore illum consequuntur.
           </h3>
           <a href="#" >
             <p class="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold text-blue-700 dark:text-neutral-200 group-hover:text-gray-600 group-focus:text-blue-600">
@@ -40,7 +40,7 @@
             <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image">
           </div>
           <h3 class="mt-2 text-lg font-medium text-gray-800  dark:text-neutral-300 dark:group-hover:text-white dark:group-focus:text-white">
-            Unity’s inside sales team drives 80% of its revenue with Preline.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo amet qui minus numquam, inventore illum consequuntur.
           </h3>
           <a href="#" >
             <p class="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold text-blue-700 dark:text-neutral-200 group-hover:text-gray-600 group-focus:text-blue-600">
