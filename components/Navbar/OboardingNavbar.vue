@@ -21,20 +21,14 @@
         >
       </NuxtLink>
       <div class="flex md:order-2 space-x-3 md:space-x-1 rtl:space-x-reverse">
-        <button
+        <NuxtLink
+          :to="routePath"
           type="button"
           class="bg-white text-blue-700 hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 border-blue-700 border font-medium rounded-md text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
-        <NuxtLink to="/register">
-          Create account
+          {{ routeLabel }}
         </NuxtLink>
-        </button>
-        <!-- <button
-          type="button"
-          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >
-          Start Assesment
-        </button> -->
+
         <button
           data-collapse-toggle="navbar-sticky"
           type="button"
@@ -68,5 +62,29 @@ onMounted(() => {
   useFlowbite(() => {
     initFlowbite();
   });
+});
+
+const route = useRoute();
+const routePath = ref("");
+const routeLabel = ref("");
+
+onMounted(() => {
+  if (route.path === "/login") {
+    routePath.value = "/register";
+    routeLabel.value = "Create account";
+  } else if (route.path === "/register") {
+    routePath.value = "/login";
+    routeLabel.value = "Login";
+  }
+});
+
+watch(route, (newRoute) => {
+  if (newRoute.path === "/login") {
+    routePath.value = "/register";
+    routeLabel.value = "Create account";
+  } else if (newRoute.path === "/register") {
+    routePath.value = "/login";
+    routeLabel.value = "Login";
+  }
 });
 </script>
