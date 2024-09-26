@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Navbar />
     <div class="pt-8 pb-0 mb-0 px-4 mx-auto max-w-screen-xl sm:pt-16 lg:px-6">
       <Hero />
     </div>
@@ -9,6 +8,5 @@
       <Blog />
       <Ads />
     </div>
-    <Footer />
   </div>
 </template>
