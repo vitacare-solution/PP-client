@@ -9,13 +9,18 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: [
-        '@nuxtjs/tailwindcss'
-    ],
+  modules: ["@nuxtjs/tailwindcss"],
   app: {
     head: {
       title: "Pulse Point",
       titleTemplate: "%s - Your Health Buddy",
+    },
+  },
+
+  runtimeConfig: {
+    apiKey: "",
+    public: {
+      baseURl: process.env.BASEURL,
     },
   },
 });
