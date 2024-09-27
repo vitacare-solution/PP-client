@@ -99,8 +99,7 @@
                     height="47"
                     viewBox="0 0 46 47"
                     fill="none"
-                  >
-                  </svg>
+                  ></svg>
                   Sign in with Google
                 </button>
 
@@ -143,7 +142,6 @@ const loginError = ref(null);
 const loginSuccess = ref(null);
 const isLoading = ref(false);
 
-
 async function handleSubmit() {
   loginError.value = null;
   loginSuccess.value = null;
@@ -161,10 +159,10 @@ async function handleSubmit() {
     const data = await response.json();
 
     if (response.ok) {
-      loginSuccess.value = "Login successful"
+      loginSuccess.value = "Login successful";
       setTimeout(() => {
         router.push("/dashboard");
-      }, 2000)
+      }, 2000);
     } else {
       loginError.value = data.error || "Invalid credentials";
     }
@@ -172,7 +170,9 @@ async function handleSubmit() {
     console.error("Login error:", error);
     loginError.value = "An error occurred during login.";
   } finally {
-    isLoading.value = false;
+    setTimeout(() => {
+      isLoading.value = false;
+    }, 2000);
   }
 }
 </script>

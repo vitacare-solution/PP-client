@@ -294,6 +294,7 @@ definePageMeta({
   layout: "auth",
 });
 
+const router = useRouter();
 const config = useRuntimeConfig();
 const registrationEndpoint = `${config.public.baseURl}/api/users/register`;
 const firstName = ref("");
@@ -358,7 +359,9 @@ async function registerUser() {
       
       registerSuccess.value = "Registration successful"
 
-      navigateTo("/login");
+      setTimeout(() => {
+        router.push("/login");
+      }, 2000)
     } else {
       if (data.errors) {
         Object.keys(data.errors).forEach((field) => {
@@ -374,7 +377,9 @@ async function registerUser() {
     registerError.value = "An error occurred during registration.";
     isRegistering.value = false;
   } finally {
-    isRegistering.value = false;
+          setTimeout(() => {
+            isRegistering.value = false;
+      }, 2000)
   }
 }
 </script>
